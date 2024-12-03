@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Wishlist from "./pages/Wishlist";
 import PaymentPage from "./pages/PaymentPage";
+import Products from "./pages/Products";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -23,6 +24,7 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} /> 
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />

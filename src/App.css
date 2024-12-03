@@ -376,12 +376,6 @@ body {
   }
 }
 
-/* Fix Alignment for Wishlist */
-.navbar-links li:last-child {
-  margin-left: auto; 
-}
-
-
 /* General Home Page Styles */
 
 .home {

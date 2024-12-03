@@ -292,6 +292,7 @@ body {
 /* General Styling */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -305,7 +306,7 @@ body {
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Space between logo and title */
+  gap: 0.5rem; 
 }
 
 .navbar-brand img {
@@ -322,10 +323,12 @@ body {
 
 .navbar-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex: 1; 
 }
 
 .navbar-links li {
@@ -337,19 +340,23 @@ body {
 .navbar-links a {
   text-decoration: none;
   color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #ffdeeb; /* Slightly lighter on hover */
+  color: #ffdeeb; 
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -371,7 +378,7 @@ body {
 
 /* Fix Alignment for Wishlist */
 .navbar-links li:last-child {
-  margin-left: auto; /* Push Wishlist to the right if needed */
+  margin-left: auto; 
 }
 
 
